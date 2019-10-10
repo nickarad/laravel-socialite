@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/redirect', 'SocialAuthGoogleController@redirect');
 Route::get('/callback', 'SocialAuthGoogleController@callback');
+
+Route::get('/linkedin/redirect', 'SocialAuthLinkedinController@redirect');
+Route::get('/linkedin/callback', 'SocialAuthLinkedinController@callback');
